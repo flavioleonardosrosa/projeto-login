@@ -40,6 +40,9 @@ section#login{
     border-radius: 20px;
     overflow: hidden;
     box-shadow: 0px 0px 10px #24272298;
+
+    transition: width .2s, height .3s;
+    transition-timing-function: ease;
 }
 section#login > div#imagem{
     display: block;

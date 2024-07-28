@@ -1,0 +1,73 @@
+@charset "UTF-8";
+/*
+Paleta de cores
+#2AFFAA;
+#31FFD1;
+#2CEAF0;
+#2FCFF5;
+#2BB7E6;
+*/
+:root{
+    --cor1:#2AFFAA;
+    --cor2:#31FFD1;
+    --cor3:#2CEAF0;
+    --cor4:#2FCFF5;
+    --cor5:#2BB7E6;
+    --cor6: #c5ebd6;
+    --cor7: #83e1ad;
+    --cor8: #3ddc84;
+    --cor9: #2fa866;
+    --cor10:#1a5c37;
+    --cor11:#063d1e;
+    --cor12:#F5F3AF;
+    --cor13:#F5F278;
+    --cor14:#F5F145;
+    --cor15:#FAF62A;
+    --cor16:#E6E418;
+    --cor17:#E5DD16;
+    }
+/*Tipical Device Breakpoints
+Pequenas telas até 600px
+Celular: de 600px até 768px
+Tablet: de 768px até 992px
+Desktop: de 992px até 1200px
+Grandes telas Acima de 1200px
+*/
+/*Versão para tablet*/
+
+@media screen and (min-width: 768px) and (max-width:992px) {
+    body{
+        background-image: linear-gradient(to top, #31FFD1, #2BB7E6);
+    }
+
+    section#login{
+        width: 80vw;
+    }
+    section#login > div#imagem{
+        float: left;
+        width: 30%;
+        height: 100%;
+    }
+    section#login > div#formulario{
+        float: right;
+        width: 70%;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    body{
+        background-image: linear-gradient(to top, #F5F278 , #2BB7E6);
+    }
+    section#login{
+        width: 950px;
+    }
+    section#login > div#imagem{
+        float: left;
+        width: 50%;
+        height: 100%;
+    }
+    section#login > div#formulario{
+        float: right;
+        width: 50%;
+    }
+}
