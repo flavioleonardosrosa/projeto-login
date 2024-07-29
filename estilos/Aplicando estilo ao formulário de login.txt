@@ -33,14 +33,13 @@ section#login{
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
     background-color: white;
     width: 250px;
     height: 500px;
     border-radius: 20px;
     overflow: hidden;
     box-shadow: 0px 0px 10px #24272298;
-
+    transform: translate(-50%, -50%);
     transition: width .2s, height .3s;
     transition-timing-function: ease;
 }
@@ -70,18 +69,40 @@ form > div.campo{
     display: block;
     width: 100%;
     height: 40px;
-    border-radius: 10px;
+    border-radius:10px;
     padding: 2px;
-    margin: 2px 0px;
+    margin: 4px 0px;
 }
 div.campo > label{
     display: none;
+}
+div.campo >i{
+    color: white;
+    /*background-color: black;*/
+    font-size: 2em;
+    width: 40px;
+    padding: 5px;
+}
+
+div.campo > input{
+    background-color: #2CEAF0;
+    font-size: 1em;
+    width: calc(100% - 45px) ;
+    border-radius: 10px;
+    height: 100%;
+    border-radius: 10px;
+    padding: 12px;
+    transform: translateY(-12px);
+}
+
+div.campo > input:focus-within{
+    background-color: #10686b;
 }
 #person{
     color: #31FFD1;
 }
 #vpn_key{
-    color: #F5F145;
+    color: #31FFD1;
 }
 
 form > input[type=submit]{
